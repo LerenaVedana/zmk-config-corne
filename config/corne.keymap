@@ -23,12 +23,12 @@
         };
 
         combo_comma {
-            bindings = <&kp COMMA>;
+            bindings = <&kp KP_COMMA>;
             key-positions = <15 16>;
         };
 
         combo_dot {
-            bindings = <&kp DOT>;
+            bindings = <&kp KP_DOT>;
             key-positions = <19 20>;
         };
     };
