@@ -60,15 +60,6 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-
-        beh_comma: beh_comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BEH_COMMA";
-            bindings = <&kp COMMA>, <&kp LESS_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     keymap {
@@ -91,9 +82,9 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &beh_comma  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
