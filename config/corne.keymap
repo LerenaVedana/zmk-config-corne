@@ -23,12 +23,12 @@
         };
 
         combo_comma {
-            bindings = <&kp KP_COMMA>;
+            bindings = <&comma_from_ru>;
             key-positions = <15 16>;
         };
 
         combo_dot {
-            bindings = <&kp KP_DOT>;
+            bindings = <&dot_from_ru>;
             key-positions = <19 20>;
         };
     };
@@ -92,6 +92,34 @@
                 <&lang_ru>;
 
             label = "LAYER_PREPINAKI";
+        };
+
+        comma_from_ru: comma_from_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&lang_en>,
+                <&macro_tap>,
+                <&kp COMMA>,
+                <&macro_tap>,
+                <&lang_ru>;
+
+            label = "COMMA_FROM_RU";
+        };
+
+        dot_from_ru: dot_from_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&lang_en>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_tap>,
+                <&lang_ru>;
+
+            label = "DOT_FROM_RU";
         };
     };
 
